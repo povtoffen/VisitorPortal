@@ -1,5 +1,5 @@
 name: visitorportal-demo
-
+x
 x-app-image: &app-image "${VISITORPORTAL_IMAGE:-ghcr.io/p0etinc0de/besucherportal:${VISITORPORTAL_VERSION:-latest}}"
 
 x-app-environment: &app-environment
