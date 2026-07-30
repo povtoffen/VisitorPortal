@@ -6,7 +6,7 @@ x-app-environment: &app-environment
   APP_NAME: VisitorPortal
   APP_ENV: local
   APP_DEBUG: "true"
-  APP_URL: http://localhost:8081
+  APP_URL: APP_URL: "${APP_URL:-http://localhost:8081}"
   APP_KEY: "${APP_KEY:-base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=}"
   APP_TIMEZONE: Europe/Berlin
   APP_LOCALE: de
