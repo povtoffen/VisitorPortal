@@ -6,7 +6,7 @@ x-app-environment: &app-environment
   APP_NAME: VisitorPortal
   APP_ENV: local
   APP_DEBUG: "true"
-  APP_URL: http://localhost:8080
+  APP_URL: http://localhost:8081
   APP_KEY: "${APP_KEY:-base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=}"
   APP_TIMEZONE: Europe/Berlin
   APP_LOCALE: de
@@ -58,7 +58,7 @@ services:
     image: *app-image
     restart: unless-stopped
     ports:
-      - "${APP_PORT:-8080}:80"
+      - "${APP_PORT:-8081}:80"
     environment:
       <<: *app-environment
       RUN_SETUP: "true"
